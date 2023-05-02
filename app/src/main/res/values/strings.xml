@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CourseworkFinal</string>
+    <string name="btnViewRecentTrips">View Recent Trips</string>
+    <string name="btnAddTrip">Add New Trip</string>
+    <string name="tvWelcome">Welcome to M-Expense</string>
+    <string name="btnManageTrips">Manage Trips</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="signin">Sign In</string>
+    <string name="cancel">Cancel</string>
+</resources>

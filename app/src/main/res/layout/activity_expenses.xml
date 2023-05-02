@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTypeExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="60dp"
+        android:text="Type of Expense"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/tvAmountExpenses"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerTypeExpense"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/editTextExpense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="34dp"
+        android:ems="10"
+        android:hint="Expense"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvAmountExpenses"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerTypeExpense" />
+
+    <TextView
+        android:id="@+id/tvAdditionalComments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="57dp"
+        android:text="Additional Comments"
+        android:textColor="#000000"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextComments"
+        app:layout_constraintEnd_toStartOf="@+id/editTextComments"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextComments"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Comments"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvAdditionalComments"
+        app:layout_constraintTop_toBottomOf="@+id/editTextExpense" />
+
+    <TextView
+        android:id="@+id/tvAmountExpenses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="46dp"
+        android:text="Amount of the Expense"
+        android:textColor="#000000"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextExpense"
+        app:layout_constraintEnd_toStartOf="@+id/editTextExpense"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnExpensesSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="34dp"
+        android:backgroundTint="@color/green"
+        android:drawableLeft="@drawable/baseline_save_24"
+        android:padding="10dp"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextComments" />
+
+    <Spinner
+        android:id="@+id/spinnerTypeExpense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="34dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvTypeExpense"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:text="Add Expense to a Trip"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
